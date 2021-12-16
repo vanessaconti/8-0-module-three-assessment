@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import Home from "./Components/Home";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/NavBar";
 import Movies from "./Components/Movies";
 import People from "./Components/People";
 import Locations from "./Components/Locations";

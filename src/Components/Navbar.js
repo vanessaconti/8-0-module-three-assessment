@@ -1,23 +1,28 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
+const NavBar = () => {
   return (
-    <nav id="Navbar">
-      <NavLink exact to={"/"}>
+    <nav>
+      <Link to="/">
         <img
-          id="logo"
-          src={
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFtPUriEerEgnYgBbGaC29RMGwtSw7IiS7nw&usqp=CAU"
-          }
           alt="logo"
+          src="https://media.wired.co.uk/photos/606d9ea2ef15037f58853565/master/w_1600,c_limit/ponyo.jpg"
         />
-      </NavLink>
-      <NavLink to={"/movies"}>Movies</NavLink>
-      <NavLink to={"/people"}>People</NavLink>
-      <NavLink to={"/locations"}>Locations</NavLink>
+      </Link>
+      <ul>
+        <li>
+          <Link to="/movies">Movies</Link>
+        </li>
+        <li>
+          <Link to="/people">People</Link>
+        </li>
+        <li>
+          <Link to="/locations">Locations</Link>
+        </li>
+      </ul>
     </nav>
   );
 };
 
-export default Navbar;
+export default NavBar;
