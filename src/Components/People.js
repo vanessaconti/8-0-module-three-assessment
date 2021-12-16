@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import "./People.css";
 
 const People = () => {
   const [userInput, setUserInput] = useState("");
